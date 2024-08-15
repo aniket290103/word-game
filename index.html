@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="word.js"></script>
+</head>
+
+<body class="bg-purple-700	 flex items-center justify-center min-h-screen font-serif">
+    <div class="main bg-white p-8 rounded-lg shadow-2xl shadow-black  w-full max-w-md ">
+    
+        <h2 class="text-4xl font-bold text-center text-slate-900 mb-6">Word Game</h2>
+        <div class="content text-center">
+            <p class="word text-3xl font-semibold text-indigo-600 mb-4"></p>
+            <div class="detail mb-6 ">
+                <p class="hint h-[15vh] w-[100%] text-lg font-bold text-gray-700">Hint: <span class="text-indigo-500">
+                    </span></p>
+                <p class="time text-lg font-bold text-gray-700  ">Time left: <span class="text-red-500"><b>30</b>
+                        S</span></p>
+            </div>
+            <input type="text" placeholder="Enter A Valid Word"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-950 focus:border-transparent mb-6">
+            <div class="buttons flex justify-between">
+                <button
+                    class="refresh bg-purple-700 text-white border-solid border border-black shadow-md  shadow-black px-4 py-2 rounded-lg hover:bg-purple-950  ">Refresh
+                    Word</button>
+                <button
+                    class="check bg-purple-700 text-white border-solid border border-black  shadow-md  shadow-black px-4 py-2 rounded-lg hover:bg-purple-950 ">Check
+                    Word</button>
+            </div>
+            <div class="flex justify-between font-bold text-green-800 mt-4 font-serif text-lg ">
+                <div class=" score text-xl    ">Score:
+                    <b>0</b>
+                </div>
+                <div class="attempts score "> Questions Attempted: <b>0/100</b>
+                </div>
+            </div>
+            <div class="flex justify-center font-bold mt-2 text-red-500  font-serif text-sm "> Tip - only one chance allowed</div>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>
